@@ -16,7 +16,6 @@ One Final Note
                 A lower level role allows anyone visiting the site to create an account so they can participate
                 in comments on all the blog posts. Comments can be moderated by site admins. A role management
                 panel allows admins and owners to manage all users and adjust their roles or disable them.
-
                
                 Because Spring security was a requirement, the app was built largely on a JSP/JSTL framework,
                 with accompanying javascript for smooth front end functionality. All data is stored on a
