@@ -1,0 +1,60 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+ http://www.springframework.org/schema/security
+ http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+
+    <beans:bean id="webexpressionHandler"
+                class="org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler"/>
+
+    <beans:bean id="encoder"
+                class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+
+    <http pattern="/login" security="none" />
+    <http pattern="/error" security="none" />
+    <http pattern="/css/**" security="none" />
+    <http pattern="/js/**" security="none" />
+    <http pattern="/img/**" security="none" />
+
+    <http auto-config="true" use-expressions="false">
+        <form-login login-processing-url="/j_spring_security_check"
+                    login-page="/login"
+                    authentication-failure-url="/login?login_error=1"/>
+
+        <intercept-url pattern="/" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+        <intercept-url pattern="/signup" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+        <intercept-url pattern="/newuser" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+        <intercept-url pattern="/search" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+
+        <intercept-url pattern="/addComment" access="ROLE_USER" />
+
+        <intercept-url pattern="/deleteComment" access="ROLE_ADMIN" />
+        <intercept-url pattern="/editComment" access="ROLE_ADMIN" />
+        <intercept-url pattern="/managecontent" access="ROLE_ADMIN" />
+        <intercept-url pattern="/deleteuser" access="ROLE_ADMIN" />
+        <intercept-url pattern="/deleteuser" access="ROLE_ADMIN" />
+
+        <intercept-url pattern="/deleteuser" access="ROLE_ADMIN" />
+        <intercept-url pattern="/manageuser" access="ROLE_ADMIN" />
+        <intercept-url pattern="/accounts" access="ROLE_ADMIN"/>
+        <intercept-url pattern="/createcontent" access="ROLE_ADMIN"/>
+        <intercept-url pattern="/editcontent" access="ROLE_ADMIN"/>
+        <intercept-url pattern="/save" access="ROLE_ADMIN"/>
+        <intercept-url pattern="/deleteBlogPost" access="ROLE_ADMIN"/>
+
+    </http>
+
+    <authentication-manager>
+        <authentication-provider>
+            <password-encoder ref="encoder"/>
+            <jdbc-user-service id="userService"
+                               data-source-ref="dataSource"
+                               users-by-username-query=
+                                       "select UserName, UserPass, Enabled from users where UserName = ?"
+                               authorities-by-username-query=
+                                       "select UserName, Authority from authorities where UserName = ?" />
+        </authentication-provider>
+    </authentication-manager>
+</beans:beans>

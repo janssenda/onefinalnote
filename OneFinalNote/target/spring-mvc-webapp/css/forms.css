@@ -1,0 +1,116 @@
+
+
+.login-form{width: 120px}
+.form-label{margin-bottom: 12px}
+
+.login-form:hover, .login-form:active, .login-form:focus, .search-select:hover, input:hover, input:focus, input:active, .contentform:hover,
+.signform:hover, .commentBody:hover, .commentBody:active, .commentBody:focus, .roleselect:hover, .roleselect:focus, .roleselect:active
+{
+    outline: none;
+    border: 1px solid red;
+    box-shadow: 0 0 5px #ff1e28;
+    background-color: white
+}
+
+button:active {background-color: black; color: white}
+.login-form:hover, .login-form:active, .login-form:focus, button:hover {
+    box-shadow: 0 0 5px rgba(255, 30, 40, 0.8);
+    -moz-box-shadow: 0 0 5px rgba(255, 30, 40, 0.8);
+    -webkit-box-shadow: 0 0 5px rgba(255, 30, 40, 0.8);}
+button:active, button:hover, button:focus {outline: none;}
+
+.ebox:hover, .ebox:active, .ebox:focus, .ebox{
+    border: 0;
+    box-shadow: none;
+    background-color: white;
+}
+
+select, input, button {
+    font-size: 12px;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing:content-box;
+    box-sizing:content-box;
+    vertical-align: bottom;
+    height: 18px;
+    padding: 2px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+button {
+    padding-left: 8px; padding-right: 8px;
+    background-color: #2e2e2e;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #000000;
+    box-shadow:none;
+}
+
+select option {
+    /*margin: 40px;*/
+    background: white;
+    color: #000;
+}
+
+.dropdown-menu {
+    padding: 5px 20px 5px 20px;
+    background-color: rgba(216, 229, 224, 1);
+    color:black;
+    border: solid 1px black;
+    min-width: 50px;
+    margin-top: 0;
+    width:120px;
+    box-shadow: 3px 5px 21px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: 3px 5px 21px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: 3px 5px 21px rgba(0, 0, 0, 0.80);
+}
+
+#menu-button{
+    width: 43px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-bottom: 8px;
+}
+
+.mb-on{outline: none; background-color: transparent;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter:         drop-shadow(5px 5px 5px #222);}
+
+.mb-off{outline: none; background-color: transparent;
+    -webkit-filter: drop-shadow(0px 0px 0px #222);
+    filter:         drop-shadow(0px 0px 0px #222);}
+
+/*#menu-button:hover{outline: none; background-color: transparent;*/
+    /*-webkit-filter: drop-shadow(5px 5px 5px #222);*/
+    /*filter:         drop-shadow(5px 5px 5px #222);}*/
+
+#menu-button:active{outline: none; background-color: transparent}
+.dropdown-divider{background-color:black}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#page #links-bar .contentform {width: 90%;}
+#page #links-bar table .form-left {width: 90px; text-align: right; padding-right: 8px}
+#page #links-bar table .form-right {text-align: left}
+#page #links-bar table .form-right, .form-left {padding-bottom: 5px}
+#page #links-bar table #cf-buttonrow {text-align: center}
+
+.search-select{width: 15%;}
+#searchterms, #searchdate, #cat-select {width: 30%;}
+
+#searchterms, #searchdate {
+    padding-left: 30px;
+    background: white url("../images/search.png") no-repeat 0 0;
+    background-size: contain;
+}
+
+
+.spc {display: inline-block; padding-bottom: 5px}
+.search-select, #searchterms, #searchbutton, #cat-select, #searchdate{margin-bottom: 3px}
+.login-form:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill, input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}

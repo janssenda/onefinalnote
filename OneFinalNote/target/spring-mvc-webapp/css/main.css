@@ -1,0 +1,187 @@
+body {
+    font-family: Arial;
+    background: #d8e5e0 url("../images/smokewallpaper.png") fixed;
+    background-size: cover;
+    font-size: 11pt;
+}
+
+
+a, a:visited {color: black}
+a:hover, a.active {color: #c80022; text-decoration: none}
+
+#page {width: 90%; max-width: 1300px; margin-right: auto; margin-left: auto;}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;
+    background-color:#000000;
+    height: 1px;
+}
+.row-fluid {
+    display: flex;
+    align-items: flex-end;
+}
+.test{border: dashed 1px #61625a;
+}
+
+.center-offset{padding-right: 170px;}
+#page .center-offset-editor{padding-right: 30px;}
+.content-title, .at-span, .hlink, .hlink:visited, .staticpages, a.hlink2 {
+    font-size: 11pt;
+    color: #670003;
+}
+
+#linksdropdown{
+    border: solid 1px black;
+    background-color: rgb(241, 241, 241)
+}
+
+.bodytag, a.hlink2:hover, .hlink:hover, .staticpages:hover{color: #ff0024; cursor: pointer}
+.bodytag, .hlink, .hlink:visited, .staticpages, .content-title{ font-weight: bold;}
+
+.taghover{color:#ff0024; background-color: black}
+
+#linktitle{font-size: 12pt; font-weight: bold; text-decoration: underline; margin-bottom: 10px}
+#title-row {margin-bottom: -10px; padding-right: 15px; padding-left: 15px}
+#title-col, #welcome {padding-top: 3px}
+#title-col-left {padding-bottom: 5px}
+#title {font-size: 16pt; font-weight: bold;}
+#hello{font-weight: bold; color:red}
+#welcome {font-size: 12pt}
+
+
+#links-ul{padding: 0 0 0 15px; margin-left: 0;}
+.errmsg{font-size: 10px; color:red}
+
+
+
+.user-role-form{display: inline}
+.user-role-div{border-bottom: solid 1px black}
+.edit-username-font{color: #ff1e28
+}
+.editbutton{width:18%; min-width: 30px}
+.roleselect{width:40%;}
+#page #links-bar {padding: 0;}
+#page #links-bar table {table-layout: fixed; width: 100%; margin: 0}
+
+
+#resultstable {border-radius: 5px; border: 2px solid black; border-collapse: separate; border-spacing: 0; width: 100%}
+#resultstable tbody, thead {border: 1px solid black; text-align: left}
+#resultstable .header-th-id, th {background-color: #2e2e2e; border-bottom: 2px solid black; padding: 3px; color: white;font-family: "Arial"; font-size: 10pt; font-weight: normal}
+#resultstable tr {border-right: 1px solid black}
+#resultstable th {text-align: left;}
+#resultstable .header-th-id, .id-col {text-align: right; width:25px; padding-right: 10px; padding-left: 10px}
+#resultstable tr:nth-child(odd) {background: rgb(250, 250, 250)
+}
+#resultstable tr:nth-child(even) {background: white;}
+/*tr:hover{background: rgba(0, 228, 135, 0.24); }*/
+#resultstable td {padding-right: 10px}
+
+
+.page-container, .blogDiv{
+    border: solid 1px #d3d3d3;
+    border-radius: 5px;
+    width: 90%;
+    padding-top: 20px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: #cccccc;
+}
+
+#title-col{
+    margin-top: 15px;
+}
+
+
+.tagDiv {
+    width: 100%;
+    padding:3px 3px 3px 10px;
+    border-top: solid 1px darkgray }
+
+.tag {font-weight: bold}
+.tag:hover{color:red !important;}
+
+.blogposts .tagTextDiv {
+    text-align: left;
+    display: inline;
+    float:left;
+    width: 80%
+}
+.spc{color:white}
+.page-container, .blogDiv{
+    border: solid 1px black;
+    background-color: #fbfbfb;
+}
+
+.page-container{padding: 25px}
+
+.blogposts .commentbuttondiv{
+    text-align: right;
+    display: inline;
+    float:right;
+    width:20%
+}
+
+#mainblogdiv .single-comment{
+    width:70%;
+    text-align: left;
+    border: solid 1px #000000;
+    display: inline-block;
+    margin: 20px auto auto 0;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.single-comment{width:55%}
+
+#mainblogdiv .add-comment{
+    width:70%;
+    text-align: center;
+    display: inline-block;
+}
+
+.commentBody, .add-comment-button {
+    display: inline;
+}
+
+.commentBody{
+    resize: none;
+    width: 400px;
+    height: 75px;
+    border: solid 1px black;
+    border-radius: 1px;
+    background-color: white;
+}
+
+.cb-table{
+    display: inline-block
+}
+
+.blogcomments{width: 100%}
+.unpub{color:red}
+.pub{color:#2ecc7d}
+.smalltext{font-size: 10pt}
+.commentTitle{font-weight: bold}
+
+.ui-menu-item {
+    font-size: 10pt;
+
+}
+
+.ui-menu{background-color: transparent}
+
+
+.autores {color:black;
+    background-color: white;
+    border:0px solid black;
+    border-radius: 0px;
+    width: 150px;
+}
+
+
+
+
